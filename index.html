@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía GitLab Server - PMA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .gitlab-gradient {
+            background: linear-gradient(135deg, #FC6D26 0%, #E24329 100%);
+        }
+
+        .step-card {
+            transition: all 0.3s ease;
+        }
+
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="gitlab-gradient text-white py-8 px-4 md:px-8">
+        <div class="container mx-auto">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h1 class="text-3xl md:text-4xl font-bold">GitLab Server</h1>
+                    <p class="mt-2 text-lg opacity-90">Infografía técnica para el grupo PMA</p>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-lg">
+                    <img src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-500.png" alt="GitLab Logo"
+                        class="h-12">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 md:px-8 py-12">
+        <!-- Requirements Section -->
+        <section class="mb-16" data-aos="fade-up">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="gitlab-gradient px-6 py-4">
+                    <h2 class="text-2xl font-bold text-white">Requisitos del Sistema</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                                <i data-feather="cpu" class="mr-2 text-orange-500"></i> Requisitos Mínimos
+                            </h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>4GB de RAM</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>2 núcleos de CPU</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>8GB de espacio en disco</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>Ubuntu 20.04/22.04, Debian 10/11, CentOS 7/8</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                                <i data-feather="zap" class="mr-2 text-orange-500"></i> Requisitos Recomendados
+                            </h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>8GB de RAM (16GB para más de 100 usuarios)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>4 núcleos de CPU (8 para más de 100 usuarios)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>50GB+ de espacio en disco (SSD recomendado)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="check-circle" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>Ubuntu 22.04 LTS o RHEL 8/9</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section class="mb-16" data-aos="fade-up">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="gitlab-gradient px-6 py-4">
+                    <h2 class="text-2xl font-bold text-white">Recomendaciones</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                    <i data-feather="shield" class="text-orange-500"></i>
+                                </div>
+                                <h3 class="text-lg font-semibold">Seguridad</h3>
+                            </div>
+                            <p class="text-gray-600">Configurar firewall, usar HTTPS con certificados válidos,
+                                actualizaciones periódicas y backups automatizados.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                    <i data-feather="database" class="text-orange-500"></i>
+                                </div>
+                                <h3 class="text-lg font-semibold">Base de Datos</h3>
+                            </div>
+                            <p class="text-gray-600">PostgreSQL separado del servidor principal para mejor rendimiento.
+                                Considerar replicación para alta disponibilidad.</p>
+                        </div>
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-orange-100 p-3 rounded-full mr-4">
+                                    <i data-feather="cloud" class="text-orange-500"></i>
+                                </div>
+                                <h3 class="text-lg font-semibold">Escalabilidad</h3>
+                            </div>
+                            <p class="text-gray-600">Planear crecimiento con antelación. Considerar GitLab Runner en
+                                máquinas separadas para CI/CD.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Installation Steps with Images -->
+<section class="mb-20" data-aos="fade-up">
+    <div class="bg-white rounded-xl shadow-lg p-8 section-card">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6">Pasos Básicos</h2>
+        <div class="space-y-10">
+            <!-- Paso 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <img src="imagen/clonegit.png" alt="Instalar Docker Desktop" class="rounded-xl shadow-md">
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">1. Instalar Docker Desktop</h3>
+                    <p class="text-gray-700">Descarga e instala <strong>Docker Desktop</strong> en Windows desde el sitio oficial. Asegúrate de habilitar la integración con WSL2 si está disponible.</p>
+                </div>
+            </div>
+            <!-- Paso 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <img src="imagen/Captura de pantalla 2025-09-02 185247.png" alt="Crear carpetas locales" class="rounded-xl shadow-md">
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">2. Crear carpetas locales</h3>
+                    <p class="text-gray-700">Crea directorios en tu PC para almacenar la configuración, logs y datos de GitLab. Ejemplo: <code>C:\gitlab\</code>.</p>
+                </div>
+            </div>
+            <!-- Paso 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <img src="imagen/giclone.png" alt="Ejecutar contenedor GitLab" class="rounded-xl shadow-md">
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">3. Ejecutar contenedor de GitLab</h3>
+                    <p class="text-gray-700">Corre el contenedor con el comando <code>docker run</code> para iniciar GitLab en tu máquina.</p>
+                </div>
+            </div>
+            <!-- Paso 4 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <img src="imagen/inciar.png" alt="Inicialización de GitLab" class="rounded-xl shadow-md">
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">4. Esperar inicialización</h3>
+                    <p class="text-gray-700">GitLab tardará algunos minutos en configurarse dentro del contenedor. Revisa los logs en Docker Desktop para monitorear el progreso.</p>
+                </div>
+            </div>
+            <!-- Paso 5 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <img src="imagen/unnamed.webp" alt="Acceder a GitLab" class="rounded-xl shadow-md">
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">5. Acceder a GitLab</h3>
+                    <p class="text-gray-700">Abre tu navegador y entra a <code>http://localhost</code> para comenzar la configuración inicial.</p>
+                </div>
+            </div>
+            <!-- Paso 6 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <img src="imagen/Captura de pantalla 2025-09-02 185717.png" alt="Configurar usuario administrador" class="rounded-xl shadow-md">
+                <div>
+                    <h3 class="text-xl font-semibold text-purple-700 mb-2">6. Configuración inicial</h3>
+                    <p class="text-gray-700">Crea el usuario administrador, define la contraseña y ajusta las opciones básicas para empezar a usar tu instancia de GitLab.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloque de terminal -->
+        <div class="mt-12 bg-gray-800 rounded-lg overflow-hidden">
+            <div class="bg-gray-900 px-4 py-2 flex items-center">
+                <div class="flex space-x-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+                <span class="text-gray-300 text-sm ml-4">terminal</span>
+            </div>
+            <pre class="p-4 text-green-400 font-mono text-sm overflow-x-auto">
+# Ejemplo de instalación en Windows usando Docker
+cd existing_repo
+git remote add origin https://gitlab.com/76195593-group/76195593-project.git
+git branch -M main
+git push -uf origin main
+
+            </pre>
+        </div>
+    </div>
+</section>
+
+        <!-- Conclusions -->
+        <section data-aos="fade-up">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="gitlab-gradient px-6 py-4">
+                    <h2 class="text-2xl font-bold text-white">Conclusiones</h2>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                                <i data-feather="check-circle" class="mr-2 text-green-500"></i> Ventajas
+                            </h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="plus" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>Solución todo-en-uno para gestión de código, CI/CD y más</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="plus" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>Fácil instalación y mantenimiento con paquetes Omnibus</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="plus" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>Alta escalabilidad para equipos de todos los tamaños</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="plus" class="mr-2 text-green-500 mt-1"></i>
+                                    <span>Comunidad activa y documentación extensa</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                                <i data-feather="alert-triangle" class="mr-2 text-yellow-500"></i> Consideraciones
+                            </h3>
+                            <ul class="space-y-3 text-gray-600">
+                                <li class="flex items-start">
+                                    <i data-feather="minus" class="mr-2 text-red-500 mt-1"></i>
+                                    <span>Requiere recursos considerables para instancias grandes</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="minus" class="mr-2 text-red-500 mt-1"></i>
+                                    <span>Curva de aprendizaje para configuraciones avanzadas</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="minus" class="mr-2 text-red-500 mt-1"></i>
+                                    <span>Mantenimiento regular necesario (actualizaciones, backups)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i data-feather="minus" class="mr-2 text-red-500 mt-1"></i>
+                                    <span>Configuración de alta disponibilidad compleja</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-8 bg-blue-50 p-6 rounded-lg border border-blue-200">
+                        <h3 class="text-lg font-semibold text-blue-800 mb-3 flex items-center">
+                            <i data-feather="info" class="mr-2 text-blue-500"></i> Recomendación Final para PMA
+                        </h3>
+                        <p class="text-blue-700">
+                            El grupo PMA, se recomienda comenzar con una instalación estándar en un servidor con
+                            los requisitos recomendados,
+                            implementar un plan de backups automatizado y considerar la configuración de integración
+                            continua desde el inicio para
+                            maximizar los beneficios de GitLab en sus proyectos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Grupo PMA</h3>
+                    <p class="text-gray-400 mt-1">Infografía Técnica - GitLab Server</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="gitlab"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-800 text-center text-gray-400">
+                <p>© 2023 Grupo PMA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>

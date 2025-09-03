@@ -40,8 +40,11 @@
                     <p class="mt-2 text-lg opacity-90">Infografía técnica para el grupo PMA</p>
                 </div>
                 <div class="bg-white p-3 rounded-lg shadow-lg">
-                    <img src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-500.png" alt="GitLab Logo"
-                        class="h-12">
+                    <a href="https://gitlab.com/users/sign_in" target="_blank" rel="noopener noreferrer">
+                        <img src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-500.png" 
+                             alt="GitLab Logo" class="h-12">
+                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -151,72 +154,80 @@
             </div>
         </section>
 
-<!-- Installation Steps with Images -->
-<section class="mb-20" data-aos="fade-up">
-    <div class="bg-white rounded-xl shadow-lg p-8 section-card">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Pasos Básicos</h2>
-        <div class="space-y-10">
-            <!-- Paso 1 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <img src="imagen/clonegit.png" alt="Instalar Docker Desktop" class="rounded-xl shadow-md">
-                <div>
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">1. Instalar Docker Desktop</h3>
-                    <p class="text-gray-700">Descarga e instala <strong>Docker Desktop</strong> en Windows desde el sitio oficial. Asegúrate de habilitar la integración con WSL2 si está disponible.</p>
+        <!-- Installation Steps with Images -->
+        <section class="mb-20" data-aos="fade-up">
+            <div class="bg-white rounded-xl shadow-lg p-8 section-card">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Pasos Básicos</h2>
+                <div class="space-y-10">
+                    <!-- Paso 1 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                        <img src="imagen/clonegit.png" alt="Instalar Docker Desktop" class="rounded-xl shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold text-purple-700 mb-2">1. Instalar Docker Desktop</h3>
+                            <p class="text-gray-700">Descarga e instala <strong>Docker Desktop</strong> en Windows desde
+                                el sitio oficial. Asegúrate de habilitar la integración con WSL2 si está disponible.</p>
+                        </div>
+                    </div>
+                    <!-- Paso 2 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                        <img src="imagen/Captura de pantalla 2025-09-02 185247.png" alt="Crear carpetas locales"
+                            class="rounded-xl shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold text-purple-700 mb-2">2. Crear carpetas locales</h3>
+                            <p class="text-gray-700">Crea directorios en tu PC para almacenar la configuración, logs y
+                                datos de GitLab. Ejemplo: <code>C:\gitlab\</code>.</p>
+                        </div>
+                    </div>
+                    <!-- Paso 3 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                        <img src="imagen/giclone.png" alt="Ejecutar contenedor GitLab" class="rounded-xl shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold text-purple-700 mb-2">3. Ejecutar contenedor de GitLab</h3>
+                            <p class="text-gray-700">Corre el contenedor con el comando <code>docker run</code> para
+                                iniciar GitLab en tu máquina.</p>
+                        </div>
+                    </div>
+                    <!-- Paso 4 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                        <img src="imagen/inciar.png" alt="Inicialización de GitLab" class="rounded-xl shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold text-purple-700 mb-2">4. Esperar inicialización</h3>
+                            <p class="text-gray-700">GitLab tardará algunos minutos en configurarse dentro del
+                                contenedor. Revisa los logs en Docker Desktop para monitorear el progreso.</p>
+                        </div>
+                    </div>
+                    <!-- Paso 5 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                        <img src="imagen/unnamed.webp" alt="Acceder a GitLab" class="rounded-xl shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold text-purple-700 mb-2">5. Acceder a GitLab</h3>
+                            <p class="text-gray-700">Abre tu navegador y entra a <code>http://localhost</code> para
+                                comenzar la configuración inicial.</p>
+                        </div>
+                    </div>
+                    <!-- Paso 6 -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                        <img src="imagen/Captura de pantalla 2025-09-02 185717.png"
+                            alt="Configurar usuario administrador" class="rounded-xl shadow-md">
+                        <div>
+                            <h3 class="text-xl font-semibold text-purple-700 mb-2">6. Configuración inicial</h3>
+                            <p class="text-gray-700">Crea el usuario administrador, define la contraseña y ajusta las
+                                opciones básicas para empezar a usar tu instancia de GitLab.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- Paso 2 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <img src="imagen/Captura de pantalla 2025-09-02 185247.png" alt="Crear carpetas locales" class="rounded-xl shadow-md">
-                <div>
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">2. Crear carpetas locales</h3>
-                    <p class="text-gray-700">Crea directorios en tu PC para almacenar la configuración, logs y datos de GitLab. Ejemplo: <code>C:\gitlab\</code>.</p>
-                </div>
-            </div>
-            <!-- Paso 3 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <img src="imagen/giclone.png" alt="Ejecutar contenedor GitLab" class="rounded-xl shadow-md">
-                <div>
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">3. Ejecutar contenedor de GitLab</h3>
-                    <p class="text-gray-700">Corre el contenedor con el comando <code>docker run</code> para iniciar GitLab en tu máquina.</p>
-                </div>
-            </div>
-            <!-- Paso 4 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <img src="imagen/inciar.png" alt="Inicialización de GitLab" class="rounded-xl shadow-md">
-                <div>
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">4. Esperar inicialización</h3>
-                    <p class="text-gray-700">GitLab tardará algunos minutos en configurarse dentro del contenedor. Revisa los logs en Docker Desktop para monitorear el progreso.</p>
-                </div>
-            </div>
-            <!-- Paso 5 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <img src="imagen/unnamed.webp" alt="Acceder a GitLab" class="rounded-xl shadow-md">
-                <div>
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">5. Acceder a GitLab</h3>
-                    <p class="text-gray-700">Abre tu navegador y entra a <code>http://localhost</code> para comenzar la configuración inicial.</p>
-                </div>
-            </div>
-            <!-- Paso 6 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-                <img src="imagen/Captura de pantalla 2025-09-02 185717.png" alt="Configurar usuario administrador" class="rounded-xl shadow-md">
-                <div>
-                    <h3 class="text-xl font-semibold text-purple-700 mb-2">6. Configuración inicial</h3>
-                    <p class="text-gray-700">Crea el usuario administrador, define la contraseña y ajusta las opciones básicas para empezar a usar tu instancia de GitLab.</p>
-                </div>
-            </div>
-        </div>
 
-        <!-- Bloque de terminal -->
-        <div class="mt-12 bg-gray-800 rounded-lg overflow-hidden">
-            <div class="bg-gray-900 px-4 py-2 flex items-center">
-                <div class="flex space-x-2">
-                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                </div>
-                <span class="text-gray-300 text-sm ml-4">terminal</span>
-            </div>
-            <pre class="p-4 text-green-400 font-mono text-sm overflow-x-auto">
+                <!-- Bloque de terminal -->
+                <div class="mt-12 bg-gray-800 rounded-lg overflow-hidden">
+                    <div class="bg-gray-900 px-4 py-2 flex items-center">
+                        <div class="flex space-x-2">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <span class="text-gray-300 text-sm ml-4">terminal</span>
+                    </div>
+                    <pre class="p-4 text-green-400 font-mono text-sm overflow-x-auto">
 # Ejemplo de instalación en Windows usando Docker
 cd existing_repo
 git remote add origin https://gitlab.com/76195593-group/76195593-project.git
@@ -224,9 +235,9 @@ git branch -M main
 git push -uf origin main
 
             </pre>
-        </div>
-    </div>
-</section>
+                </div>
+            </div>
+        </section>
 
         <!-- Conclusions -->
         <section data-aos="fade-up">
@@ -320,47 +331,55 @@ git push -uf origin main
                     </a>
                 </div>
             </div>
-    <!-- Team Members -->
-<section class="mb-20" data-aos="fade-up">
-    <div class="bg-white rounded-xl shadow-lg p-8 section-card">
-        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Integrantes</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            
-            <!-- Miembro 1 -->
-            <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
-                <img src="ruta/juan.png" alt="Juan Aldair Zavala" class="w-24 h-24 mx-auto rounded-full mb-4 shadow">
-                <h3 class="text-xl font-semibold text-purple-700">Juan Aldair Zavala</h3>
-                <p class="text-sm text-gray-500 mb-2">Líder</p>
-                <p class="text-gray-700 text-sm">Encargado de la gestión del proyecto y coordinación del equipo.</p>
-            </div>
-            
-            <!-- Miembro 2 -->
-            <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
-                <img src="ruta/samir.png" alt="Samir Junior Challco" class="w-24 h-24 mx-auto rounded-full mb-4 shadow">
-                <h3 class="text-xl font-semibold text-purple-700">Samir Junior Challco</h3>
-                <p class="text-sm text-gray-500 mb-2">Backend</p>
-                <p class="text-gray-700 text-sm">Responsable de la lógica del servidor, base de datos y API.</p>
-            </div>
-            
-            <!-- Miembro 3 -->
-            <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
-                <img src="ruta/jodi.png" alt="Jodi Cordova" class="w-24 h-24 mx-auto rounded-full mb-4 shadow">
-                <h3 class="text-xl font-semibold text-purple-700">Jodi Cordova</h3>
-                <p class="text-sm text-gray-500 mb-2">Frontend</p>
-                <p class="text-gray-700 text-sm">Encargado de la interfaz de usuario y la experiencia visual del sistema.</p>
-            </div>
-            
-            <!-- Miembro 4 -->
-            <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
-                <img src="ruta/steven.png" alt="Steven Jonathan" class="w-24 h-24 mx-auto rounded-full mb-4 shadow">
-                <h3 class="text-xl font-semibold text-purple-700">Steven Jonathan</h3>
-                <p class="text-sm text-gray-500 mb-2">Tester Web</p>
-                <p class="text-gray-700 text-sm">Responsable de pruebas, control de calidad y aseguramiento del software.</p>
-            </div>
+            <!-- Team Members -->
+            <section class="mb-20" data-aos="fade-up">
+                <div class="bg-white rounded-xl shadow-lg p-8 section-card">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Integrantes</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-        </div>
-    </div>
-</section>
+                        <!-- Miembro 1 -->
+                        <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                            <img src="ruta/juan.png" alt="Juan Aldair Zavala"
+                                class="w-24 h-24 mx-auto rounded-full mb-4 shadow">
+                            <h3 class="text-xl font-semibold text-purple-700">Juan Aldair Zavala</h3>
+                            <p class="text-sm text-gray-500 mb-2">Líder</p>
+                            <p class="text-gray-700 text-sm">Encargado de la gestión del proyecto y coordinación del
+                                equipo.</p>
+                        </div>
+
+                        <!-- Miembro 2 -->
+                        <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                            <img src="ruta/samir.png" alt="Samir Junior Challco"
+                                class="w-24 h-24 mx-auto rounded-full mb-4 shadow">
+                            <h3 class="text-xl font-semibold text-purple-700">Samir Junior Challco</h3>
+                            <p class="text-sm text-gray-500 mb-2">Backend</p>
+                            <p class="text-gray-700 text-sm">Responsable de la lógica del servidor, base de datos y API.
+                            </p>
+                        </div>
+
+                        <!-- Miembro 3 -->
+                        <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                            <img src="ruta/jodi.png" alt="Jodi Cordova"
+                                class="w-24 h-24 mx-auto rounded-full mb-4 shadow">
+                            <h3 class="text-xl font-semibold text-purple-700">Jodi Cordova</h3>
+                            <p class="text-sm text-gray-500 mb-2">Frontend</p>
+                            <p class="text-gray-700 text-sm">Encargado de la interfaz de usuario y la experiencia visual
+                                del sistema.</p>
+                        </div>
+
+                        <!-- Miembro 4 -->
+                        <div class="bg-gray-50 rounded-2xl shadow-md p-6 text-center hover:shadow-xl transition">
+                            <img src="ruta/steven.png" alt="Steven Jonathan"
+                                class="w-24 h-24 mx-auto rounded-full mb-4 shadow">
+                            <h3 class="text-xl font-semibold text-purple-700">Steven Jonathan</h3>
+                            <p class="text-sm text-gray-500 mb-2">Tester Web</p>
+                            <p class="text-gray-700 text-sm">Responsable de pruebas, control de calidad y aseguramiento
+                                del software.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
             <div class="mt-8 pt-6 border-t border-gray-800 text-center text-gray-400">
                 <p>© 2023 Grupo PMA. Todos los derechos reservados.</p>
             </div>
